@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "labetegi"
+  "defaultProject": "labetegi",
+  "cli": {
+    "analytics": "58de2985-e2f2-4f46-8840-181168d8a768"
+  }
 }

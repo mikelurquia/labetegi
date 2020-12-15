@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between">
+            <h5>Recipe detail</h5>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="row mb-2">
+    <div class="col-12">
+        <img [src]="recipe.imagePath" alt="{{recipe.name}}"  class="img-fluid">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <h4>{{ recipe.name }}</h4>
+
+        <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                <fa-icon [icon]="['fas','utensils']" size="md" class="mr-2"></fa-icon>Actions
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Action - 1</button>
+                <button ngbDropdownItem>Another Action</button>
+                <button ngbDropdownItem>Something else is here</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row p-4">
+    <div class="col-12">
+        {{ recipe.description }}
+    </div>
+</div>

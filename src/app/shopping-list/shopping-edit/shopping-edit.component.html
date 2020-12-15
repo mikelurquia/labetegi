@@ -1,0 +1,39 @@
+<form>
+    <div class="form-row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-group">
+                <label for="formName"><b>Name</b></label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><fa-icon [icon]="['fas','pen']" size="md"></fa-icon></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Name" id="formName" #ingName>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="form-group">
+                <label for="formAmount"><b>Amount</b></label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><fa-icon [icon]="['fas','sort-numeric-up-alt']" size="md"></fa-icon></div>
+                    </div>
+                    <input type="number" class="form-control" placeholder="Amount" id="formAmount" #ingAmount>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="row">
+    <div class="col-12">
+        <button class="btn btn-outline-success btn-sm mr-2 pl-3 pr-3" (click)="onAddIngredient()">
+            <fa-icon [icon]="['far','plus-square']" class="mr-2" size="lg"></fa-icon>Add
+        </button>
+        <button class="btn btn-outline-primary btn-sm mr-2 pl-3 pr-3">
+            <fa-icon [icon]="['far','edit']" class="mr-2" size="lg"></fa-icon>Edit
+        </button>
+        <button class="btn btn-outline-danger btn-sm mr-2 pl-3 pr-3">
+            <fa-icon [icon]="['far','trash-alt']" class="mr-2" size="lg"></fa-icon>Delete
+        </button>
+    </div>
+</div>
